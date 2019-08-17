@@ -20,4 +20,37 @@ export class MyPieChartComponent implements OnInit {
   }
 
 
+  public chartClicked(e: any): void {
+
+    console.log(e);
+    if(e.active.length > 0){
+      var points = [];
+      var pointSelected = e.active[0]._chart.tooltip._model.caretY;
+      var legends = e.active[0]._chart.legend.legendItems;
+    
+      for (var i = 0; i < e.active.length; ++i) {
+        points.push(e.active[i]._model.y);
+      }
+    
+      let position = points.indexOf(pointSelected);
+      let label = legends[position].text
+    
+      console.log("Point: "+label)
+    }
+
+    //if (e.active.length > 0) {
+    //  const chart = e.active[0]._chart;
+    //  const activePoints = chart.getElementAtEvent(e.event);
+    //  if ( activePoints.length > 0) {
+    //    // get the internal index of slice in pie chart
+    //    const clickedElementIndex = activePoints[0]._index;
+    //    const label = chart.data.labels[clickedElementIndex];
+    //    // get value by index
+//
+    //    const value = chart.data.datasets[0].data[clickedElementIndex];
+    //    console.log(clickedElementIndex, label, value)
+    //  }
+    //}
+  }
+
 }

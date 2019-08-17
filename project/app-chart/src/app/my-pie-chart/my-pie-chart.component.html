@@ -3,7 +3,8 @@
     <canvas baseChart
             [data]="pieChartData"
             [labels]="pieChartLabels"
-            [chartType]="pieChartType"></canvas>
+            [chartType]="pieChartType"
+            (click)="chartClicked($event)"></canvas>
   </div>
 
   <a (click)="ListenerClick()">hola</a>
