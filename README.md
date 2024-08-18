@@ -1,6 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/alvarigno/Angular-chart-example/master/project/app-chart/src/favicon.ico)
 
-# Angular-chart-example
+# Angular-chart-example - test
 angular / with Chart element
 
 ## Warning Version  ng2-charts
