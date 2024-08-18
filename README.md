@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/alvarigno/Angular-chart-example/master/project/app-chart/src/favicon.ico)
+
 # Angular-chart-example
 angular / with Chart element
 
